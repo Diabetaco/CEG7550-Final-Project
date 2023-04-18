@@ -5,7 +5,8 @@ This repo serves as a collection of improvements to a weak paper in order to ful
 
 # Selected Weak Paper
 
-**Image Registration based on SIFT features and adaptive RANSAC transform**: This paper was selected as weak because it lacked in vital areas.
+*Image Registration based on SIFT features and adaptive RANSAC transform*
+This paper was selected as weak because it lacked in vital areas.
 
 # Improvements
 Improvements to the paper helped it to achieve the requirement. 
