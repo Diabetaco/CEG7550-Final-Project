@@ -2,7 +2,6 @@ clc;
 clear all
 close all
 im=imread('test images\dark.jpg');
-%im=imread('1.jpg');
 figure, imshow(im), title('Original Image')
 [row col ch]=size(im);
 
@@ -15,10 +14,10 @@ subplot(1,3,2),imshow(s1), title('Saturation')
 subplot(1,3,3),imshow(v1), title('Intensity')
 
 
-hsize=15;
-sigma1=15;
-sigma2=80;
-sigma3=250;
+hsize=500;
+sigma1=10;
+sigma2=70;
+sigma3=200;
 
 H1 = fspecial('gaussian',hsize,sigma1);
 H2 = fspecial('gaussian',hsize,sigma2);

@@ -1,11 +1,12 @@
 function test(testcase)
 %testcase = 1;
+% rainy [3 15] 0.1 0.001 0.0001 d<0.2
 % house [3 15] 0.1 0.001 0.0001 d<0.2
 % woman [10 15] 0.2 0.001 0.001 d<0.1
 if testcase == 'rainy'
     input = im2double(imread('test_images/rainy.jpg'));
-    w = [3 15];
-    e1 = 0.1;
+    w = [2 13];
+    e1 = 0.2;
     e2 = 0.001;
     e3 = 0.0001;
     DoF_t = 0.2;
@@ -47,12 +48,12 @@ Iref = b*Icr + (1-b)*Ir;
 Irr = imguidedfilter(Icr,Iref,'NeighborhoodSize',w,...
     'DegreeOfSmoothing',e3);
 
-%imwrite(im2uint8(I_LF),['output/',testcase,'_lf.tif'],'tif');
-%imwrite(im2uint8(I_HF),['output/',testcase,'_hf.tif'],'tif');
-%imwrite(im2uint8(I_LF_EDGE),['output/', testcase, '_lf_e.tif'],'tif');
-%imwrite(im2uint8(abs(DoF)),['output/', testcase, '_dof.tif'],'tif');
-%imwrite(im2uint8(newDoF),['output/', testcase, '_dof_t.tif'],'tif');
-%imwrite(im2uint8(Ir),['output/', testcase, '_recover.tif'],'tif');
-%imwrite(im2uint8(Icr),['output/', testcase, '_recover_min.tif'],'tif');
-imwrite(im2uint8(Irr),['output/', testcase, '_recover_clear.png'],'png');
+imwrite(im2uint8(I_LF),['output/',testcase,'_lf.jpg'],'jpg');
+imwrite(im2uint8(I_HF),['output/',testcase,'_hf.jpg'],'jpg');
+imwrite(im2uint8(I_LF_EDGE),['output/', testcase, '_lf_e.jpg'],'jpg');
+imwrite(im2uint8(abs(DoF)),['output/', testcase, '_dof.jpg'],'jpg');
+imwrite(im2uint8(newDoF),['output/', testcase, '_dof_t.jpg'],'jpg');
+imwrite(im2uint8(Ir),['output/', testcase, '_recover.jpg'],'jpg');
+imwrite(im2uint8(Icr),['output/', testcase, '_recover_min.jpg'],'jpg');
+imwrite(im2uint8(Irr),['output/', testcase, '_recover_clear.jpg'],'jpg');
 end

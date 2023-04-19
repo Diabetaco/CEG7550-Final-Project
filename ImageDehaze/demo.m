@@ -22,7 +22,7 @@ close all;
 clear all;
 
 % input an image
-filename = '.\examples\sam_6';
+filename = '.\examples\rainy_c';
 HazeImg = imread([filename, '.bmp']);
 figure, imshow(HazeImg, []);
 
@@ -42,7 +42,7 @@ lambda = 2;  % regularization parameter, the more this parameter, the closer to 
 t = CalTransmission(HazeImg, ts, lambda, 0.5); % using contextual information
 
 % dehazing
-r = Dehazefun(HazeImg, t, A, 0.85); 
+r = Dehazefun(HazeImg, t, A, 0.35); 
 
 % show and save the results
 figure, imshow(ts, []);
