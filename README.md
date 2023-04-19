@@ -20,4 +20,4 @@ https://github.com/Auggen21/low-light-image-enhancement2
 *Single-Image-Based Rain and Snow Removal Using Multi-guided Filter*
 https://github.com/Kinpzz/Single-Image-Rain-Removal
 ## Testing Images
-*Uncertainty Comparison of Visual Sensing in Adverse Weather Conditions*
+*Street Viewer: An Autonomous Vision Based Traffic Tracking System*
