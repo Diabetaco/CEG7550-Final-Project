@@ -6,6 +6,7 @@ This repo serves as a collection of improvements to a weak paper in order to ful
 # Selected Weak Paper
 
 *Image Registration based on SIFT features and adaptive RANSAC transform*
+https://github.com/ily-R/ImageCoregistration
 This paper was selected as weak because it lacked in vital areas.
 
 # Improvements
